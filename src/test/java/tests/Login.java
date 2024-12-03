@@ -43,8 +43,5 @@ public class Login {
 		cartpage.verifyProductsDisplay(ProductName);
 		cartpage.Checkout();
 		Thread.sleep(2000);
-		
-		
-		
 	}
 }

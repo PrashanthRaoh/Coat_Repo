@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import Utility.UtilityClass;
 
 public class CartPage extends UtilityClass {
+WebDriver driver;
 
 	public CartPage(WebDriver driver) {
 		super(driver);
@@ -27,7 +28,9 @@ public class CartPage extends UtilityClass {
 		return match;
 	}
 	
-	public void Checkout() {
+	public CheckOutPage Checkout() {
 		Checkout.click();
+		return new CheckOutPage(driver);
+		
 	}
 }

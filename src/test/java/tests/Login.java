@@ -11,9 +11,6 @@ import pages.CartPage;
 import pages.LandingPage;
 import pages.ProductCatalog;
 
-/////Login test
-
-
 public class Login {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -26,15 +23,10 @@ public class Login {
 		
 		LandingPage lp = new LandingPage(driver);
 		lp.goTo();
-		
 		UtilityClass util = new UtilityClass(driver);
-		
 		ProductCatalog prodcat = lp.login("iprashanth.raoh@gmail.com", util.PasswordEncoderdecoder());
-		
 		List<WebElement> allproducts = prodcat.getProductsList();
-		
 		prodcat.addProdcutTo_Cart(ProductName);
-		
 		CartPage cartpage = prodcat.gotoCartpage();
 		
 		cartpage.verifyProductsDisplay(ProductName);

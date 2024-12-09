@@ -11,9 +11,7 @@ import pages.CartPage;
 import pages.LandingPage;
 import pages.ProductCatalog;
 
-/*
-	Login test
-*/
+
 public class Login {
 
 	public static void main(String[] args) throws InterruptedException {

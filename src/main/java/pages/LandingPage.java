@@ -40,6 +40,7 @@ public class LandingPage extends UtilityClass {
 	public void goTo()
 	{
 		driver.get("https://rahulshettyacademy.com/client");
+		 System.out.println("Browser opened");
 	}
 	
 }
